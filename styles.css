@@ -1,0 +1,219 @@
+/*----Main styles----*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Droid Serif', serif;
+}
+
+header,
+footer p {
+  text-align: center;
+}
+
+.title,
+.secondtitle {
+  font-size: 1.35em;
+  padding-top: 25px;
+  margin-bottom: 10px;
+}
+
+.secondtitle {
+  border-top: 5px solid;
+  width: 90%;
+  margin-left: 15px;
+}
+
+ input[placeholder] {
+  text-align: right;
+  padding-right: 10px;
+}
+
+textarea:focus,
+select:focus,
+input:focus {
+  background-color: lightgrey;
+}
+
+
+
+
+/*----Header----*/
+
+h1 {
+  background-color: #10568C;
+  color: white;
+  margin-top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.65em;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-size: 1.25em;
+}
+
+header p {
+  width: 80%;
+  font-size: 1em;
+  margin: 0 auto;
+  padding: 10px 20px 20px 15px;
+  border-bottom: 10px double;
+}
+
+input[name="fullname"],
+input[name="email"],
+input[name="mobile"],
+input[name="streetaddress"],
+input[name="city"],
+input[name="state"] {
+  padding-right: 10px;
+}
+
+
+/*----Contact Information----*/
+
+fieldset {
+  border: 0;
+}
+
+input,
+select[name="state"],
+button {
+  width: 95%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border-color: darkgreen;
+}
+
+select[name="state"] {
+  height: 50px;
+}
+
+input[name="zipcode"] {
+  width: 35%;
+}
+
+
+
+/*----News Letter----*/
+
+.secondfield label{
+  display: inline-block;
+  width: 150px;
+  float: left;
+  clear: left;
+  text-align: right;
+  margin-left: 10px;
+  font-size: 1.30em;
+}
+
+input[name="newsLetter"],
+input[name="format"] {
+  width: 25px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-left: 8px;
+  font-size: 1em;
+  background-color: #0A7531;
+  color: white;
+  margin-top: 0;
+}
+
+textarea {
+  width: 95%;
+  background-color: whitesmoke;
+  border-radius: 3px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 0;
+  height: 100px;
+}
+
+h3 {
+  margin-left: 10px;
+  margin-bottom: 25px;
+  color: darkgrey;
+  font-size: 1em;
+}
+
+
+/*----Footer----*/
+
+footer p {
+  margin-bottom: 160px;
+}
+
+
+/*----Media query----*/
+
+@media (min-width: 768px) {
+
+  form {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  /*----Header----*/
+
+  h2 {
+    margin-top: 35px;
+  }
+
+  header p {
+    padding-bottom: 40px;
+    width: 70%;
+  }
+
+
+  /*--Contact Information--*/
+
+  div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .contact,
+  select[name="state"] {
+    width: 80%;
+    float: right;
+    margin-left: 50px;
+  }
+
+  input[name="zipcode"] {
+    margin-left: 20px;
+  }
+
+  label.firstfield {
+    font-size: 1em;
+    width: 30%;;
+    float: left;
+    clear: left;
+    text-align: left;
+
+  }
+
+
+  /*--Newsletter--*/
+
+  button {
+  width: 93%;
+  margin-left: 18px;
+}
+
+  .secondtitle legend {
+    margin: 0;
+  }
+
+  .secondtitle {
+    width: 100%;
+  }
+}
